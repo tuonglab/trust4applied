@@ -1,11 +1,5 @@
 #!/bin/bash --login
 
-# Check if all required arguments have been passed
-if [ "$#" -ne 4 ]; then
-    echo "Usage: $0 output_dir processed_bamfiles bam_files_dir reference_file"
-    exit 1
-fi
-
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=64
