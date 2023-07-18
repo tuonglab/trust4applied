@@ -6,7 +6,12 @@
 
 [Github link](https://github.com/liulab-dfci/TRUST4). You can install it from Github source or if you have conda, just run `conda install -c bioconda trust4`
 
-## Required Arguments
+## Running
+
+### BAM files
+In a HPC environment, run `sbatch trust4batch.sh output_dir processed_bamfiles bam_files_dir reference_file` to submit your job to your HPC cluster. Make sure to replace `output_dir`, `processed_bamfiles`, `bam_files_dir`, and `reference_file` with the appropriate values for your specific use case.
+
+#### Required Arguments
 
 `output_dir` : It's where you store the output folders and files from running trust4
 
@@ -16,11 +21,11 @@
 
 `reference_file`: This is just `hg38_bcrtcr.fa`, unless you have a custom file in place of it.
 
-## Running
-
-In a HPC environment, run `sbatch trust4batch.sh output_dir processed_bamfiles bam_files_dir reference_file` to submit your job to your HPC cluster. Make sure to replace `output_dir`, `processed_bamfiles`, `bam_files_dir`, and `reference_file` with the appropriate values for your specific use case.
-
 Else just run `./trust4run.sh output_dir processed_bamfiles bam_files_dir reference_file`.
+
+### fastq files
+
+In a HPC environment, run `sbatch trust4_run_fastq_batch.sh path_to_fastq_files output_dir reference_file processed_files_file` to submit your job to your HPC cluster. Make sure to replace these arguments with the appropriate values for your specific use case.
 
 ## Disclaimer
 

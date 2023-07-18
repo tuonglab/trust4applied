@@ -1,0 +1,6 @@
+trust4run.error
+trust4run.output
+trust4run_fastq.error
+trust4run_fastq.output
+processed_fastq_files.txt
+processed_bam_files.txt
