@@ -13,8 +13,7 @@
 
 # Set variables
 output_dir="$1"
-processed_bamfiles="$2"
-bam_files_dir="$3"
-reference_file="$4"
+bam_files_dir="$2"
+reference_file="$3"
 
-srun trust4run.sh "$output_dir" "$processed_bamfiles" "$bam_files_dir" "$reference_file"
+srun trust4run.sh "$output_dir" "$bam_files_dir" "$reference_file"

@@ -11,8 +11,6 @@ dir_path="$1"
 output_dir="$2"
 reference_file="$3"
 
-trap 'echo "Script interrupted"; rm -rf "$output_dir"; exit' INT TERM
-
 # Create new directory
 mkdir -p "$output_dir"
 
