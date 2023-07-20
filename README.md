@@ -25,7 +25,7 @@ Else just run `./trust4run.sh output_dir processed_bamfiles bam_files_dir refere
 
 ### fastq files
 
-In a HPC environment, run `sbatch trust4_run_fastq_batch.sh path_to_fastq_files output_dir reference_file processed_files_file` to submit your job to your HPC cluster. Make sure to replace these arguments with the appropriate values for your specific use case.
+In a HPC environment, run `sbatch trust4_run_fastq_batch.sh path_to_fastq_files output_dir reference_file` to submit your job to your HPC cluster. Make sure to replace these arguments with the appropriate values for your specific use case.
 
 ## Disclaimer
 

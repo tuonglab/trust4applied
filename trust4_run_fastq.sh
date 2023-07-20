@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check if a directory path, an output directory, a reference file, and a processed files file were provided as arguments
-if [ "$#" -ne 4 ]; then
+if [ "$#" -ne 3 ]; then
     echo "Usage: $0 directory_path output_dir reference_file"
     exit 1
 fi
@@ -36,9 +36,7 @@ for r1_file in "$dir_path"/*_R1.fastq.gz; do
         # Copy output files back to output_subdir
         rsync -avz "$output_subdir/"* "$output_subdir/" --progress
 
-        # Append the names of the processed FASTQ files to the processed files file
-        echo "$(basename "$r1_file")" >> "$processed_files_file"
-        echo "$(basename "$r2_file")" >> "$processed_files_file"
+
     fi
 done
 
@@ -62,9 +60,7 @@ for r1_file in "$dir_path"/*_R1.fq.gz; do
         # Copy output files back to output_subdir
         rsync -avz "$output_subdir/"* "$output_subdir/" --progress
 
-        # Append the names of the processed FASTQ files to the processed files file
-        echo "$(basename "$r1_file")" >> "$processed_files_file"
-        echo "$(basename "$r2_file")" >> "$processed_files_file"
+
     fi
 done
 
@@ -89,8 +85,6 @@ for r1_file in "$dir_path"/*_F.fq.gz; do
         # Copy output files back to output_subdir
         rsync -avz "$output_subdir/"* "$output_subdir/" --progress
 
-        # Append the names of the processed FASTQ files to the processed files file
-        echo "$(basename "$r1_file")" >> "$processed_files_file"
-        echo "$(basename "$r2_file")" >> "$processed_files_file"
+
     fi
 done
