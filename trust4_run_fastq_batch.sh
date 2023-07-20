@@ -15,6 +15,5 @@
 dir_path="$1"
 output_dir="$2"
 reference_file="$3"
-processed_files_file="$4"
 
-srun trust4_run_fastq.sh "$dir_path" "$output_dir" "$reference_file" "$processed_files_file"
+srun trust4_run_fastq.sh "$dir_path" "$output_dir" "$reference_file"

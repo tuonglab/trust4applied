@@ -2,15 +2,14 @@
 
 # Check if a directory path, an output directory, a reference file, and a processed files file were provided as arguments
 if [ "$#" -ne 4 ]; then
-    echo "Usage: $0 directory_path output_dir reference_file processed_files_file"
+    echo "Usage: $0 directory_path output_dir reference_file"
     exit 1
 fi
 
-# Set the directory path, output directory, reference file, and processed files file to the first, second, third, and fourth arguments, respectively
+# Set the directory path, output directory, reference file to the first, second, third respectively
 dir_path="$1"
 output_dir="$2"
 reference_file="$3"
-processed_files_file="$4"
 
 trap 'echo "Script interrupted"; rm -rf "$output_dir"; exit' INT TERM
 
@@ -21,11 +20,6 @@ mkdir -p "$output_dir"
 for r1_file in "$dir_path"/*_R1.fastq.gz; do
     r2_file="${r1_file%_R1.fastq.gz}_R2.fastq.gz"
     if [ -f "$r2_file" ]; then
-        # Check if the FASTQ files have already been processed
-        if grep -Fxq "$(basename "$r1_file")" "$processed_files_file" && grep -Fxq "$(basename "$r2_file")" "$processed_files_file"; then
-            echo "Skipping $r1_file and $r2_file because they have already been processed"
-            continue
-        fi
 
         # Copy FASTQ files to $TMPDIR
         rsync -avz "$r1_file" "$r2_file" "$TMPDIR/" --progress
@@ -52,11 +46,6 @@ done
 for r1_file in "$dir_path"/*_R1.fq.gz; do
     r2_file="${r1_file%_R1.fq.gz}_R2.fq.gz"
     if [ -f "$r2_file" ]; then
-        # Check if the FASTQ files have already been processed
-        if grep -Fxq "$(basename "$r1_file")" "$processed_files_file" && grep -Fxq "$(basename "$r2_file")" "$processed_files_file"; then
-            echo "Skipping $r1_file and $r2_file because they have already been processed"
-            continue
-        fi
 
         # Copy FASTQ files to $TMPDIR
         rsync -avz "$r1_file" "$r2_file" "$TMPDIR/" --progress
@@ -83,11 +72,7 @@ done
 for r1_file in "$dir_path"/*_F.fq.gz; do
     r2_file="${r1_file%_F.fq.gz}_R.fq.gz"
     if [ -f "$r2_file" ]; then
-        # Check if the FASTQ files have already been processed
-        if grep -Fxq "$(basename "$r1_file")" "$processed_files_file" && grep -Fxq "$(basename "$r2_file")" "$processed_files_file"; then
-            echo "Skipping $r1_file and $r2_file because they have already been processed"
-            continue
-        fi
+
 
         # Copy FASTQ files to $TMPDIR
         rsync -avz "$r1_file" "$r2_file" "$TMPDIR/" --progress
