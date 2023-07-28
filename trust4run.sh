@@ -28,5 +28,4 @@ for bamfile in "$bam_files_dir"/*.bam; do
 
     # Run run-trust4 on the bam file and save output to output_subdir
     run-trust4 -b "$TMPDIR/$(basename "$bamfile")" -f "$reference_file" -t 64 --od "$output_subdir" --abnormalUnmapFlag
-    echo "$(basename "$bamfile")" >> "$processed_bamfiles"
 done
