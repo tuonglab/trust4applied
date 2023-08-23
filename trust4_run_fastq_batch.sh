@@ -4,8 +4,8 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=64
 #SBATCH --mem=32G
-#SBATCH --job-name=trust4
-#SBATCH --time=96:00:00
+#SBATCH --job-name=trust4_fastq
+#SBATCH --time=108:00:00
 #SBATCH --partition=general
 #SBATCH --account=a_kelvin_tuong
 #SBATCH -o trust4run_fastq.output

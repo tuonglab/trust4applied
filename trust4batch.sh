@@ -5,11 +5,11 @@
 #SBATCH --cpus-per-task=64
 #SBATCH --mem=32G
 #SBATCH --job-name=trust4
-#SBATCH --time=96:00:00
+#SBATCH --time=124:00:00
 #SBATCH --partition=general
 #SBATCH --account=a_kelvin_tuong
-#SBATCH -o trust4run.output
-#SBATCH -e trust4run.error
+#SBATCH -o trust4run_phs002620.output
+#SBATCH -e trust4run_phs002620.error
 
 # Set variables
 output_dir="$1"

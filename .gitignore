@@ -4,3 +4,6 @@ trust4run_fastq.error
 trust4run_fastq.output
 processed_fastq_files.txt
 processed_bam_files.txt
+descriptive.py
+trust4run_phs002620.error
+trust4run_phs002620.output
