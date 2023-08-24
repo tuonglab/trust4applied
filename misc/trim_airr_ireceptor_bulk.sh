@@ -11,13 +11,15 @@ src_dir="$1"
 tmp_dir="$2"
 
 mkdir -p "$tmp_dir/ireceptor"
-# Copy TSV files to the destination directory, excluding files in the exclude_dir directory
+# Copy TSV files to the destination directory, preserving the subdirectory structure
 while IFS= read -r -d '' file; do
-    dir_name=$(basename "$(dirname "$file")")
-    mkdir -p "$tmp_dir/ireceptor/$dir_name"
-    if [ ! -f "$tmp_dir/ireceptor/$dir_name/$(basename "$file")" ]; then
-        cp "$file" "$tmp_dir/ireceptor/$dir_name/"
-    fi
+    # Get the relative path of the file within the source directory
+    rel_path="${file#$src_dir/}"
+    # Create the destination directory, preserving the subdirectory structure
+    dest_dir="$tmp_dir/ireceptor/$(dirname "$rel_path")"
+    mkdir -p "$dest_dir"
+    # Copy the file to the destination directory, preserving the subdirectory structure
+    cp "$file" "$dest_dir/"
 done < <(find "$src_dir" -type f -name "*.tsv" ! -name "*_extracted.tsv" -print0)
 
 # Process TSV files using awk
@@ -47,6 +49,6 @@ while IFS= read -r -d '' file; do
             print $c1, $c2, $c3, $c4, $c5, $c6, $c7, $c8, $c9
         }
     }' "$file" > "$outfile"
-    # Copy the output file back to its original directory
-    cp "$outfile" "$(dirname "${file/#$tmp_dir\/ireceptor/$1}")/"
+    # Copy the output file back to its original directory, preserving the subdirectory structure
+    cp "$outfile" "$(dirname "${file/#$tmp_dir\/ireceptor/$src_dir}")/"
 done < <(find "$tmp_dir/ireceptor" -name "*.tsv" ! -name "*_extracted.tsv" -print0)
