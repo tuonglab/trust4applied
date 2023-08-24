@@ -16,8 +16,8 @@ if [ -z "$2" ]; then
 fi
 output_file=$2
 
-# Count the number of rows in each file
-row_counts=$(find "$directory" -name "*_extracted.tsv" -exec wc -l {} + | sort -n)
+# Count the number of rows in each file, excluding the header row
+row_counts=$(find "$directory" -name "*_extracted.tsv" -exec awk 'END {print NR-1}' {} + | sort -n)
 
 # Output the number of rows in each file to the specified output file in TSV format
 echo -e "File\tNumber of rows" > "$output_file"
