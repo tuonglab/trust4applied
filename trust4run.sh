@@ -15,8 +15,6 @@ reference_file="$3"
 mkdir -p "$output_dir"
 
 for bamfile in "$bam_files_dir"/*.bam; do
-    # Check if bam file has already been processed
-
     rsync -avz "$bamfile" "$TMPDIR/" --progress
 
     # Process bam file in $TMPDIR
@@ -27,5 +25,5 @@ for bamfile in "$bam_files_dir"/*.bam; do
     echo "Running run-trust4 for $bamfile"
 
     # Run run-trust4 on the bam file and save output to output_subdir
-    run-trust4 -b "$TMPDIR/$(basename "$bamfile")" -f "$reference_file" -t 64 --od "$output_subdir" --abnormalUnmapFlag
+    /home/uqachoo1/mambaforge/envs/env/bin/run-trust4 -b "$TMPDIR/$(basename "$bamfile")" -f "$reference_file" -t 72 --od "$output_subdir" --abnormalUnmapFlag
 done

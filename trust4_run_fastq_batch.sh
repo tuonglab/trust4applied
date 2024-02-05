@@ -5,15 +5,15 @@
 #SBATCH --cpus-per-task=64
 #SBATCH --mem=32G
 #SBATCH --job-name=trust4_fastq
-#SBATCH --time=108:00:00
+#SBATCH --time=96:00:00
 #SBATCH --partition=general
 #SBATCH --account=a_kelvin_tuong
-#SBATCH -o trust4run_fastq.output
-#SBATCH -e trust4run_fastq.error
+#SBATCH -o trust4run_fastq_phs002599.output
+#SBATCH -e trust4run_fastq_phs002599.error
 
 # Set variables
-dir_path="$1"
-output_dir="$2"
+dir_path="$2"
+output_dir="$1"
 reference_file="$3"
 
-srun trust4_run_fastq.sh "$dir_path" "$output_dir" "$reference_file"
+srun trust4_run_fastq.sh "$output_dir" "$dir_path" "$reference_file"

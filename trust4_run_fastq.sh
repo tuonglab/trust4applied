@@ -7,8 +7,8 @@ if [ "$#" -ne 3 ]; then
 fi
 
 # Set the directory path, output directory, reference file to the first, second, third respectively
-dir_path="$1"
-output_dir="$2"
+dir_path="$2"
+output_dir="$1"
 reference_file="$3"
 
 # Create new directory
@@ -29,11 +29,7 @@ for r1_file in "$dir_path"/*_R1.fastq.gz; do
         echo "Processing $r1_file and $r2_file"
 
         # Run trust4 on the FASTQ files and save output to output_subdir
-        run-trust4 -1 "$TMPDIR/$(basename "$r1_file")" -2 "$TMPDIR/$(basename "$r2_file")" -f "$reference_file" -t 64 --od "$output_subdir"
-
-        # Copy output files back to output_subdir
-        rsync -avz "$output_subdir/"* "$output_subdir/" --progress
-
+        /home/uqachoo1/mambaforge/envs/env/bin/run-trust4 -1 "$TMPDIR/$(basename "$r1_file")" -2 "$TMPDIR/$(basename "$r2_file")" -f "$reference_file" -t 64 --od "$output_subdir"
 
     fi
 done
@@ -53,7 +49,7 @@ for r1_file in "$dir_path"/*_R1.fq.gz; do
         echo "Processing $r1_file and $r2_file"
 
         # Run trust4 on the FASTQ files and save output to output_subdir
-        run-trust4 -1 "$TMPDIR/$(basename "$r1_file")" -2 "$TMPDIR/$(basename "$r2_file")" -f "$reference_file" -t 64 --od "$output_subdir"
+        /home/uqachoo1/mambaforge/envs/env/bin/run-trust4 -1 "$TMPDIR/$(basename "$r1_file")" -2 "$TMPDIR/$(basename "$r2_file")" -f "$reference_file" -t 64 --od "$output_subdir"
 
         # Copy output files back to output_subdir
         rsync -avz "$output_subdir/"* "$output_subdir/" --progress
@@ -78,10 +74,7 @@ for r1_file in "$dir_path"/*_F.fq.gz; do
         echo "Processing $r1_file and $r2_file"
 
         # Run trust4 on the FASTQ files and save output to output_subdir
-        run-trust4 -1 "$TMPDIR/$(basename "$r1_file")" -2 "$TMPDIR/$(basename "$r2_file")" -f "$reference_file" -t 64 --od "$output_subdir"
-
-        # Copy output files back to output_subdir
-        rsync -avz "$output_subdir/"* "$output_subdir/" --progress
+        /home/uqachoo1/mambaforge/envs/env/bin/run-trust4 -1 "$TMPDIR/$(basename "$r1_file")" -2 "$TMPDIR/$(basename "$r2_file")" -f "$reference_file" -t 64 --od "$output_subdir"
 
 
     fi

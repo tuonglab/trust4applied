@@ -7,3 +7,12 @@ processed_bam_files.txt
 descriptive.py
 trust4run_phs002620.error
 trust4run_phs002620.output
+trust4run_fastq_phs002504.error
+trust4run_fastq_phs002504.output
+trust4run_fastq_phs002529.error
+trust4run_fastq_phs002529.output
+trust4run_fastq_phs002599.error
+trust4run_fastq_phs002599.output
+trust4run_phs003111.error
+trust4run_phs003111.output
+.vscode/c_cpp_properties.json
