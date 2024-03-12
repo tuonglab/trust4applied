@@ -15,15 +15,21 @@ reference_file="$3"
 mkdir -p "$output_dir"
 
 for bamfile in "$bam_files_dir"/*.bam; do
-    rsync -avz "$bamfile" "$TMPDIR/" --progress
-
     # Process bam file in $TMPDIR
     dir=$(basename "$bamfile" .bam)
     output_subdir="$output_dir/$dir"
+
+    # Skip processing if the output subdir exists and it contains files
+    if [ -d "$output_subdir" ] && [ "$(ls -A $output_subdir)" ]; then
+        echo "Output subdir $output_subdir exists and is not empty. Skipping..."
+        continue
+    fi
+
+    rsync -avz "$bamfile" "$TMPDIR/" --progress
 
     mkdir -p "$output_subdir"
     echo "Running run-trust4 for $bamfile"
 
     # Run run-trust4 on the bam file and save output to output_subdir
-    /home/uqachoo1/mambaforge/envs/env/bin/run-trust4 -b "$TMPDIR/$(basename "$bamfile")" -f "$reference_file" -t 72 --od "$output_subdir" --abnormalUnmapFlag
+    /scratch/user/uqachoo1/miniforge3/bin/run-trust4 -b "$TMPDIR/$(basename "$bamfile")" -f "$reference_file" -t 72 --od "$output_subdir" --abnormalUnmapFlag
 done
