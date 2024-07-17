@@ -1,0 +1,32 @@
+srun: ROUTE: split_hostlist: hl=bun093 tree_width 0
+[Mon Jul 15 10:28:52 2024] TRUST4 begins.
+[Mon Jul 15 10:28:52 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/fastq-extractor -t 64 -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -o /home/uqsdemon/resultsTrust4F/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1/TRUST_P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1_toassemble  -1 /scratch/temp/10015758/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1.fastq.gz -2 /scratch/temp/10015758/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R2.fastq.gz
+[Mon Jul 15 10:28:52 2024] Start to extract candidate reads from read files.
+[Mon Jul 15 10:39:13 2024] Finish extracting reads.
+[Mon Jul 15 10:39:13 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/trust4  -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -t 64 -o /home/uqsdemon/resultsTrust4F/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1/TRUST_P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1 -1 /home/uqsdemon/resultsTrust4F/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1/TRUST_P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1_toassemble_1.fq -2 /home/uqsdemon/resultsTrust4F/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1/TRUST_P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1_toassemble_2.fq
+[Mon Jul 15 10:39:15 2024] Read in and count kmers for 100000 reads.
+[Mon Jul 15 10:39:18 2024] Read in and count kmers for 200000 reads.
+[Mon Jul 15 10:39:21 2024] Read in and count kmers for 300000 reads.
+[Mon Jul 15 10:39:24 2024] Read in and count kmers for 400000 reads.
+[Mon Jul 15 10:39:27 2024] Read in and count kmers for 500000 reads.
+[Mon Jul 15 10:39:50 2024] Found 526473 reads.
+[Mon Jul 15 10:39:53 2024] Finish sorting the reads.
+[Mon Jul 15 10:39:55 2024] Finish rough annotations.
+[Mon Jul 15 10:40:03 2024] Processed 100000 reads (29503 are used for assembly).
+[Mon Jul 15 10:40:35 2024] Processed 200000 reads (80412 are used for assembly).
+[Mon Jul 15 10:41:42 2024] Processed 300000 reads (135248 are used for assembly).
+[Mon Jul 15 10:42:30 2024] Processed 400000 reads (191091 are used for assembly).
+[Mon Jul 15 10:43:34 2024] Processed 500000 reads (232572 are used for assembly).
+[Mon Jul 15 10:43:48 2024] Assembled 244285 reads.
+[Mon Jul 15 10:43:48 2024] Try to rescue 34288 reads for assembly.
+[Mon Jul 15 10:44:35 2024] Rescued 4259 reads.
+[Mon Jul 15 10:44:44 2024] Extend assemblies by mate pair information.
+[Mon Jul 15 10:44:50 2024] Remove redundant assemblies.
+[Mon Jul 15 10:45:04 2024] Finish assembly.
+[Mon Jul 15 10:45:08 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/annotator -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -a /home/uqsdemon/resultsTrust4F/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1/TRUST_P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1_final.out -t 64 -o /home/uqsdemon/resultsTrust4F/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1/TRUST_P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1 --notIMGT  -r /home/uqsdemon/resultsTrust4F/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1/TRUST_P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1_assembled_reads.fa > /home/uqsdemon/resultsTrust4F/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1/TRUST_P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1_annot.fa
+[Mon Jul 15 10:45:08 2024] Start to annotate assemblies.
+[Mon Jul 15 10:45:14 2024] Start to realign reads for CDR3 analysis.
+[Mon Jul 15 10:45:25 2024] Compute CDR3 abundance.
+[Mon Jul 15 10:45:25 2024] Finish annotation.
+[Mon Jul 15 10:45:27 2024] SYSTEM CALL: perl /home/uqsdemon/miniconda3/bin/trust-simplerep.pl /home/uqsdemon/resultsTrust4F/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1/TRUST_P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1_cdr3.out  > /home/uqsdemon/resultsTrust4F/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG/P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1/TRUST_P018501_362876_T_R_HJWVCDSX3_GGTCTATTAA-CGTGTCGTGG_R1_report.tsv
+[Mon Jul 15 10:45:27 2024] TRUST4 finishes.

@@ -1,0 +1,35 @@
+srun: ROUTE: split_hostlist: hl=bun037 tree_width 0
+[Mon Jul 15 07:52:16 2024] TRUST4 begins.
+[Mon Jul 15 07:52:16 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/fastq-extractor -t 64 -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -o /home/uqsdemon/resultsTrust4F/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1/TRUST_06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1_toassemble  -1 /scratch/temp/10015733/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1.fastq.gz -2 /scratch/temp/10015733/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R2.fastq.gz
+[Mon Jul 15 07:52:16 2024] Start to extract candidate reads from read files.
+[Mon Jul 15 08:07:55 2024] Finish extracting reads.
+[Mon Jul 15 08:07:55 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/trust4  -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -t 64 -o /home/uqsdemon/resultsTrust4F/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1/TRUST_06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1 -1 /home/uqsdemon/resultsTrust4F/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1/TRUST_06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1_toassemble_1.fq -2 /home/uqsdemon/resultsTrust4F/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1/TRUST_06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1_toassemble_2.fq
+[Mon Jul 15 08:07:59 2024] Read in and count kmers for 100000 reads.
+[Mon Jul 15 08:08:05 2024] Read in and count kmers for 200000 reads.
+[Mon Jul 15 08:08:11 2024] Read in and count kmers for 300000 reads.
+[Mon Jul 15 08:08:17 2024] Read in and count kmers for 400000 reads.
+[Mon Jul 15 08:08:30 2024] Read in and count kmers for 500000 reads.
+[Mon Jul 15 08:08:45 2024] Read in and count kmers for 600000 reads.
+[Mon Jul 15 08:08:56 2024] Read in and count kmers for 700000 reads.
+[Mon Jul 15 08:10:01 2024] Found 682635 reads.
+[Mon Jul 15 08:10:06 2024] Finish sorting the reads.
+[Mon Jul 15 08:10:08 2024] Finish rough annotations.
+[Mon Jul 15 08:10:45 2024] Processed 100000 reads (47492 are used for assembly).
+[Mon Jul 15 08:12:07 2024] Processed 200000 reads (107129 are used for assembly).
+[Mon Jul 15 08:13:56 2024] Processed 300000 reads (169165 are used for assembly).
+[Mon Jul 15 08:15:39 2024] Processed 400000 reads (234112 are used for assembly).
+[Mon Jul 15 08:17:06 2024] Processed 500000 reads (298701 are used for assembly).
+[Mon Jul 15 08:19:44 2024] Processed 600000 reads (350552 are used for assembly).
+[Mon Jul 15 08:20:37 2024] Assembled 373004 reads.
+[Mon Jul 15 08:20:37 2024] Try to rescue 57714 reads for assembly.
+[Mon Jul 15 08:22:31 2024] Rescued 6372 reads.
+[Mon Jul 15 08:22:54 2024] Extend assemblies by mate pair information.
+[Mon Jul 15 08:23:03 2024] Remove redundant assemblies.
+[Mon Jul 15 08:23:24 2024] Finish assembly.
+[Mon Jul 15 08:23:29 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/annotator -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -a /home/uqsdemon/resultsTrust4F/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1/TRUST_06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1_final.out -t 64 -o /home/uqsdemon/resultsTrust4F/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1/TRUST_06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1 --notIMGT  -r /home/uqsdemon/resultsTrust4F/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1/TRUST_06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1_assembled_reads.fa > /home/uqsdemon/resultsTrust4F/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1/TRUST_06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1_annot.fa
+[Mon Jul 15 08:23:29 2024] Start to annotate assemblies.
+[Mon Jul 15 08:23:41 2024] Start to realign reads for CDR3 analysis.
+[Mon Jul 15 08:24:02 2024] Compute CDR3 abundance.
+[Mon Jul 15 08:24:02 2024] Finish annotation.
+[Mon Jul 15 08:24:05 2024] SYSTEM CALL: perl /home/uqsdemon/miniconda3/bin/trust-simplerep.pl /home/uqsdemon/resultsTrust4F/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1/TRUST_06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1_cdr3.out  > /home/uqsdemon/resultsTrust4F/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA/06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1/TRUST_06-0117_415663_T_R_22JLY5LT3_AAGTTCTAGT-GGTAAGATAA_R1_report.tsv
+[Mon Jul 15 08:24:05 2024] TRUST4 finishes.

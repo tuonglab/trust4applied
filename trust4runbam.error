@@ -1,0 +1,27 @@
+srun: ROUTE: split_hostlist: hl=bun062 tree_width 0
+[Mon Jul  8 22:02:24 2024] TRUST4 begins.
+[Mon Jul  8 22:02:24 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/bam-extractor -b /scratch/temp/9967818/01-0015-386008-T-R.sorted.rmdup.hs38.bam -t 72 -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -o /home/uqsdemon/resultsTrust4F/01-0015-386008-T-R.sorted.rmdup.hs38/TRUST_01-0015-386008-T-R_toassemble  -u
+[bam_header_read] EOF marker is absent. The input is probably truncated.
+[bam_header_read] invalid BAM binary header (this is not a BAM file).
+Can not open /scratch/temp/9967818/01-0015-386008-T-R.sorted.rmdup.hs38.bam.
+system /home/uqsdemon/miniconda3/bin/bam-extractor -b /scratch/temp/9967818/01-0015-386008-T-R.sorted.rmdup.hs38.bam -t 72 -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -o /home/uqsdemon/resultsTrust4F/01-0015-386008-T-R.sorted.rmdup.hs38/TRUST_01-0015-386008-T-R_toassemble  -u failed: 256 at /home/uqsdemon/miniconda3/bin/run-trust4 line 48.
+[Mon Jul  8 22:02:25 2024] TRUST4 begins.
+[Mon Jul  8 22:02:25 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/bam-extractor -b /scratch/temp/9967818/01-0051-409375-T-R.sorted.rmdup.hs38.bam -t 72 -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -o /home/uqsdemon/resultsTrust4F/01-0051-409375-T-R.sorted.rmdup.hs38/TRUST_01-0051-409375-T-R_toassemble  -u
+[bam_header_read] EOF marker is absent. The input is probably truncated.
+[bam_header_read] invalid BAM binary header (this is not a BAM file).
+Can not open /scratch/temp/9967818/01-0051-409375-T-R.sorted.rmdup.hs38.bam.
+system /home/uqsdemon/miniconda3/bin/bam-extractor -b /scratch/temp/9967818/01-0051-409375-T-R.sorted.rmdup.hs38.bam -t 72 -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -o /home/uqsdemon/resultsTrust4F/01-0051-409375-T-R.sorted.rmdup.hs38/TRUST_01-0051-409375-T-R_toassemble  -u failed: 256 at /home/uqsdemon/miniconda3/bin/run-trust4 line 48.
+[Mon Jul  8 22:02:25 2024] TRUST4 begins.
+[Mon Jul  8 22:02:25 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/bam-extractor -b /scratch/temp/9967818/01-0074-405812-T-R.sorted.rmdup.hs38.bam -t 72 -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -o /home/uqsdemon/resultsTrust4F/01-0074-405812-T-R.sorted.rmdup.hs38/TRUST_01-0074-405812-T-R_toassemble  -u
+[bam_header_read] EOF marker is absent. The input is probably truncated.
+[bam_header_read] invalid BAM binary header (this is not a BAM file).
+Can not open /scratch/temp/9967818/01-0074-405812-T-R.sorted.rmdup.hs38.bam.
+system /home/uqsdemon/miniconda3/bin/bam-extractor -b /scratch/temp/9967818/01-0074-405812-T-R.sorted.rmdup.hs38.bam -t 72 -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -o /home/uqsdemon/resultsTrust4F/01-0074-405812-T-R.sorted.rmdup.hs38/TRUST_01-0074-405812-T-R_toassemble  -u failed: 256 at /home/uqsdemon/miniconda3/bin/run-trust4 line 48.
+[Mon Jul  8 22:02:26 2024] TRUST4 begins.
+[Mon Jul  8 22:02:26 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/bam-extractor -b /scratch/temp/9967818/01-0079-406620-T-R.sorted.rmdup.hs38.bam -t 72 -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -o /home/uqsdemon/resultsTrust4F/01-0079-406620-T-R.sorted.rmdup.hs38/TRUST_01-0079-406620-T-R_toassemble  -u
+[bam_header_read] EOF marker is absent. The input is probably truncated.
+[bam_header_read] invalid BAM binary header (this is not a BAM file).
+Can not open /scratch/temp/9967818/01-0079-406620-T-R.sorted.rmdup.hs38.bam.
+system /home/uqsdemon/miniconda3/bin/bam-extractor -b /scratch/temp/9967818/01-0079-406620-T-R.sorted.rmdup.hs38.bam -t 72 -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -o /home/uqsdemon/resultsTrust4F/01-0079-406620-T-R.sorted.rmdup.hs38/TRUST_01-0079-406620-T-R_toassemble  -u failed: 256 at /home/uqsdemon/miniconda3/bin/run-trust4 line 48.
+[Mon Jul  8 22:02:26 2024] TRUST4 begins.
+srun: error: bun062: task 0: Exited with exit code 122

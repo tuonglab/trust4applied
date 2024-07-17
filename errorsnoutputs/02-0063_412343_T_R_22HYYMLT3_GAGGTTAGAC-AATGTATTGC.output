@@ -1,0 +1,9 @@
+sending incremental file list
+02-0063_412343_T_R_22HYYMLT3_GAGGTTAGAC-AATGTATTGC_R1.fastq.gz
+         32,768   0%    0.00kB/s    0:00:00      184,188,928  17%  175.62MB/s    0:00:04      366,510,080  35%  174.84MB/s    0:00:03      529,793,024  51%  168.52MB/s    0:00:02      696,549,376  67%  166.15MB/s    0:00:01      875,495,424  85%  164.90MB/s    0:00:00    1,028,566,781 100%  164.99MB/s    0:00:05 (xfr#1, to-chk=1/2)
+02-0063_412343_T_R_22HYYMLT3_GAGGTTAGAC-AATGTATTGC_R2.fastq.gz
+         32,768   0%   32.19kB/s    8:40:07          819,200   0%  800.00kB/s    0:20:54      164,397,056  16%   78.39MB/s    0:00:10      319,455,232  31%  101.59MB/s    0:00:06      469,532,672  46%  111.95MB/s    0:00:04      625,115,136  62%  148.88MB/s    0:00:02      784,728,064  78%  147.97MB/s    0:00:01      943,489,024  93%  148.86MB/s    0:00:00    1,004,700,466 100%  130.03MB/s    0:00:07 (xfr#2, to-chk=0/2)
+
+sent 2,034,115,505 bytes  received 54 bytes  150,675,226.59 bytes/sec
+total size is 2,033,267,247  speedup is 1.00
+Processing /QRISdata/Q7250/raw/concatenednew/02-0063_412343_T_R_22HYYMLT3_GAGGTTAGAC-AATGTATTGC/02-0063_412343_T_R_22HYYMLT3_GAGGTTAGAC-AATGTATTGC_R1.fastq.gz and /QRISdata/Q7250/raw/concatenednew/02-0063_412343_T_R_22HYYMLT3_GAGGTTAGAC-AATGTATTGC/02-0063_412343_T_R_22HYYMLT3_GAGGTTAGAC-AATGTATTGC_R2.fastq.gz

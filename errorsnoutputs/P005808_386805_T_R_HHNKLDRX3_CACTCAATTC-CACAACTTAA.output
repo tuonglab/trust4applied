@@ -1,0 +1,9 @@
+sending incremental file list
+P005808_386805_T_R_HHNKLDRX3_CACTCAATTC-CACAACTTAA_R1.fastq.gz
+         32,768   0%    0.00kB/s    0:00:00      196,050,944  17%  186.94MB/s    0:00:04      395,083,776  34%  188.47MB/s    0:00:03      593,985,536  51%  188.94MB/s    0:00:02      792,952,832  69%  189.19MB/s    0:00:01      987,004,928  86%  188.67MB/s    0:00:00    1,143,573,615 100%  187.64MB/s    0:00:05 (xfr#1, to-chk=1/2)
+P005808_386805_T_R_HHNKLDRX3_CACTCAATTC-CACAACTTAA_R2.fastq.gz
+         32,768   0%   37.69kB/s    8:19:15       29,130,752   2%   27.78MB/s    0:00:38      223,117,312  19%  106.39MB/s    0:00:08      414,187,520  36%  131.71MB/s    0:00:05      610,566,144  54%  145.64MB/s    0:00:03      804,028,416  71%  184.84MB/s    0:00:01      989,102,080  87%  182.72MB/s    0:00:00    1,129,107,620 100%  159.88MB/s    0:00:06 (xfr#2, to-chk=0/2)
+
+sent 2,273,629,347 bytes  received 54 bytes  197,706,904.43 bytes/sec
+total size is 2,272,681,235  speedup is 1.00
+Processing /QRISdata/Q7250/raw/concatenednew/P005808_386805_T_R_HHNKLDRX3_CACTCAATTC-CACAACTTAA/P005808_386805_T_R_HHNKLDRX3_CACTCAATTC-CACAACTTAA_R1.fastq.gz and /QRISdata/Q7250/raw/concatenednew/P005808_386805_T_R_HHNKLDRX3_CACTCAATTC-CACAACTTAA/P005808_386805_T_R_HHNKLDRX3_CACTCAATTC-CACAACTTAA_R2.fastq.gz

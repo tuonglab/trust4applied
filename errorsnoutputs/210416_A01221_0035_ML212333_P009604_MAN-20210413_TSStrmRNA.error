@@ -1,0 +1,35 @@
+srun: ROUTE: split_hostlist: hl=bun059 tree_width 0
+[Mon Jul 15 11:17:02 2024] TRUST4 begins.
+[Mon Jul 15 11:17:02 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/fastq-extractor -t 64 -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -o /home/uqsdemon/resultsTrust4F/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1/TRUST_210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1_toassemble  -1 /scratch/temp/10015767/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1.fastq.gz -2 /scratch/temp/10015767/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R2.fastq.gz
+[Mon Jul 15 11:17:02 2024] Start to extract candidate reads from read files.
+[Mon Jul 15 11:32:41 2024] Finish extracting reads.
+[Mon Jul 15 11:32:41 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/trust4  -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -t 64 -o /home/uqsdemon/resultsTrust4F/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1/TRUST_210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1 -1 /home/uqsdemon/resultsTrust4F/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1/TRUST_210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1_toassemble_1.fq -2 /home/uqsdemon/resultsTrust4F/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1/TRUST_210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1_toassemble_2.fq
+[Mon Jul 15 11:32:44 2024] Read in and count kmers for 100000 reads.
+[Mon Jul 15 11:32:48 2024] Read in and count kmers for 200000 reads.
+[Mon Jul 15 11:32:53 2024] Read in and count kmers for 300000 reads.
+[Mon Jul 15 11:32:57 2024] Read in and count kmers for 400000 reads.
+[Mon Jul 15 11:33:02 2024] Read in and count kmers for 500000 reads.
+[Mon Jul 15 11:33:07 2024] Read in and count kmers for 600000 reads.
+[Mon Jul 15 11:33:12 2024] Read in and count kmers for 700000 reads.
+[Mon Jul 15 11:33:44 2024] Found 682756 reads.
+[Mon Jul 15 11:33:47 2024] Finish sorting the reads.
+[Mon Jul 15 11:33:49 2024] Finish rough annotations.
+[Mon Jul 15 11:33:50 2024] Processed 100000 reads (25453 are used for assembly).
+[Mon Jul 15 11:33:51 2024] Processed 200000 reads (59383 are used for assembly).
+[Mon Jul 15 11:33:57 2024] Processed 300000 reads (109842 are used for assembly).
+[Mon Jul 15 11:34:14 2024] Processed 400000 reads (168493 are used for assembly).
+[Mon Jul 15 11:34:43 2024] Processed 500000 reads (226645 are used for assembly).
+[Mon Jul 15 11:35:53 2024] Processed 600000 reads (279954 are used for assembly).
+[Mon Jul 15 11:36:43 2024] Assembled 309888 reads.
+[Mon Jul 15 11:36:43 2024] Try to rescue 26587 reads for assembly.
+[Mon Jul 15 11:37:33 2024] Rescued 3640 reads.
+[Mon Jul 15 11:37:41 2024] Extend assemblies by mate pair information.
+[Mon Jul 15 11:37:49 2024] Remove redundant assemblies.
+[Mon Jul 15 11:37:57 2024] Finish assembly.
+[Mon Jul 15 11:37:59 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/annotator -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -a /home/uqsdemon/resultsTrust4F/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1/TRUST_210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1_final.out -t 64 -o /home/uqsdemon/resultsTrust4F/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1/TRUST_210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1 --notIMGT  -r /home/uqsdemon/resultsTrust4F/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1/TRUST_210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1_assembled_reads.fa > /home/uqsdemon/resultsTrust4F/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1/TRUST_210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1_annot.fa
+[Mon Jul 15 11:37:59 2024] Start to annotate assemblies.
+[Mon Jul 15 11:38:08 2024] Start to realign reads for CDR3 analysis.
+[Mon Jul 15 11:38:14 2024] Compute CDR3 abundance.
+[Mon Jul 15 11:38:14 2024] Finish annotation.
+[Mon Jul 15 11:38:16 2024] SYSTEM CALL: perl /home/uqsdemon/miniconda3/bin/trust-simplerep.pl /home/uqsdemon/resultsTrust4F/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1/TRUST_210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1_cdr3.out  > /home/uqsdemon/resultsTrust4F/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA/210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1/TRUST_210416_A01221_0035_ML212333_P009604_MAN-20210413_TSStrmRNA_R1_report.tsv
+[Mon Jul 15 11:38:16 2024] TRUST4 finishes.

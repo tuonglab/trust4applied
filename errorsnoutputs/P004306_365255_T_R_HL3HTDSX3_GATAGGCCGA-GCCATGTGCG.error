@@ -1,0 +1,55 @@
+srun: ROUTE: split_hostlist: hl=bun062 tree_width 0
+[Mon Jul 15 04:42:18 2024] TRUST4 begins.
+[Mon Jul 15 04:42:19 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/fastq-extractor -t 64 -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -o /home/uqsdemon/resultsTrust4F/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1/TRUST_P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1_toassemble  -1 /scratch/temp/10015719/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1.fastq.gz -2 /scratch/temp/10015719/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R2.fastq.gz
+[Mon Jul 15 04:42:19 2024] Start to extract candidate reads from read files.
+[Mon Jul 15 05:14:30 2024] Finish extracting reads.
+[Mon Jul 15 05:14:30 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/trust4  -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -t 64 -o /home/uqsdemon/resultsTrust4F/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1/TRUST_P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1 -1 /home/uqsdemon/resultsTrust4F/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1/TRUST_P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1_toassemble_1.fq -2 /home/uqsdemon/resultsTrust4F/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1/TRUST_P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1_toassemble_2.fq
+[Mon Jul 15 05:14:34 2024] Read in and count kmers for 100000 reads.
+[Mon Jul 15 05:14:38 2024] Read in and count kmers for 200000 reads.
+[Mon Jul 15 05:14:44 2024] Read in and count kmers for 300000 reads.
+[Mon Jul 15 05:14:50 2024] Read in and count kmers for 400000 reads.
+[Mon Jul 15 05:14:56 2024] Read in and count kmers for 500000 reads.
+[Mon Jul 15 05:15:02 2024] Read in and count kmers for 600000 reads.
+[Mon Jul 15 05:15:08 2024] Read in and count kmers for 700000 reads.
+[Mon Jul 15 05:15:14 2024] Read in and count kmers for 800000 reads.
+[Mon Jul 15 05:15:20 2024] Read in and count kmers for 900000 reads.
+[Mon Jul 15 05:15:27 2024] Read in and count kmers for 1000000 reads.
+[Mon Jul 15 05:15:33 2024] Read in and count kmers for 1100000 reads.
+[Mon Jul 15 05:15:41 2024] Read in and count kmers for 1200000 reads.
+[Mon Jul 15 05:15:48 2024] Read in and count kmers for 1300000 reads.
+[Mon Jul 15 05:15:55 2024] Read in and count kmers for 1400000 reads.
+[Mon Jul 15 05:16:02 2024] Read in and count kmers for 1500000 reads.
+[Mon Jul 15 05:16:10 2024] Read in and count kmers for 1600000 reads.
+[Mon Jul 15 05:16:21 2024] Read in and count kmers for 1700000 reads.
+[Mon Jul 15 05:18:21 2024] Found 1623853 reads.
+[Mon Jul 15 05:18:31 2024] Finish sorting the reads.
+[Mon Jul 15 05:18:37 2024] Finish rough annotations.
+[Mon Jul 15 05:18:45 2024] Processed 100000 reads (40587 are used for assembly).
+[Mon Jul 15 05:19:28 2024] Processed 200000 reads (90293 are used for assembly).
+[Mon Jul 15 05:20:47 2024] Processed 300000 reads (145474 are used for assembly).
+[Mon Jul 15 05:22:46 2024] Processed 400000 reads (207397 are used for assembly).
+[Mon Jul 15 05:24:00 2024] Processed 500000 reads (271423 are used for assembly).
+[Mon Jul 15 05:25:27 2024] Processed 600000 reads (338344 are used for assembly).
+[Mon Jul 15 05:27:41 2024] Processed 700000 reads (406782 are used for assembly).
+[Mon Jul 15 05:30:07 2024] Processed 800000 reads (480209 are used for assembly).
+[Mon Jul 15 05:32:16 2024] Processed 900000 reads (552460 are used for assembly).
+[Mon Jul 15 05:34:20 2024] Processed 1000000 reads (622235 are used for assembly).
+[Mon Jul 15 05:36:22 2024] Processed 1100000 reads (686590 are used for assembly).
+[Mon Jul 15 05:38:25 2024] Processed 1200000 reads (738690 are used for assembly).
+[Mon Jul 15 05:42:22 2024] Processed 1300000 reads (797841 are used for assembly).
+[Mon Jul 15 05:45:39 2024] Processed 1400000 reads (864414 are used for assembly).
+[Mon Jul 15 05:47:29 2024] Processed 1500000 reads (910650 are used for assembly).
+[Mon Jul 15 05:48:00 2024] Processed 1600000 reads (923975 are used for assembly).
+[Mon Jul 15 05:48:06 2024] Assembled 925894 reads.
+[Mon Jul 15 05:48:06 2024] Try to rescue 115688 reads for assembly.
+[Mon Jul 15 05:53:25 2024] Rescued 15234 reads.
+[Mon Jul 15 05:54:49 2024] Extend assemblies by mate pair information.
+[Mon Jul 15 05:55:12 2024] Remove redundant assemblies.
+[Mon Jul 15 05:55:50 2024] Finish assembly.
+[Mon Jul 15 05:55:59 2024] SYSTEM CALL: /home/uqsdemon/miniconda3/bin/annotator -f /home/uqsdemon/trust4-processing/hg38_bcrtcr.fa -a /home/uqsdemon/resultsTrust4F/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1/TRUST_P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1_final.out -t 64 -o /home/uqsdemon/resultsTrust4F/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1/TRUST_P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1 --notIMGT  -r /home/uqsdemon/resultsTrust4F/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1/TRUST_P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1_assembled_reads.fa > /home/uqsdemon/resultsTrust4F/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1/TRUST_P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1_annot.fa
+[Mon Jul 15 05:55:59 2024] Start to annotate assemblies.
+[Mon Jul 15 05:56:23 2024] Start to realign reads for CDR3 analysis.
+[Mon Jul 15 05:57:31 2024] Compute CDR3 abundance.
+[Mon Jul 15 05:57:31 2024] Finish annotation.
+[Mon Jul 15 05:57:37 2024] SYSTEM CALL: perl /home/uqsdemon/miniconda3/bin/trust-simplerep.pl /home/uqsdemon/resultsTrust4F/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1/TRUST_P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1_cdr3.out  > /home/uqsdemon/resultsTrust4F/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG/P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1/TRUST_P004306_365255_T_R_HL3HTDSX3_GATAGGCCGA-GCCATGTGCG_R1_report.tsv
+[Mon Jul 15 05:57:54 2024] TRUST4 finishes.
