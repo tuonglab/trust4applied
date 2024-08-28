@@ -12,6 +12,6 @@
 #SBATCH -o cop.out
 
 cd /home/uqsdemon/trust4-processing
-chmod +x /home/uqsdemon/trust4-processing/copying.sh
+chmod +x /home/uqsdemon/trust4-processing/concatenation.sh
 
-srun copying.sh
+srun concatenation.sh

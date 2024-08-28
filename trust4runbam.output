@@ -1,74 +1,0 @@
-sending incremental file list
-01-0015-386008-T-R.sorted.rmdup.hs38.bam
-         32,768   0%    0.00kB/s    0:00:00       11,602,128 100%   22.56MB/s    0:00:00 (xfr#1, to-chk=0/1)
-
-sent 5,303,228 bytes  received 35 bytes  3,535,508.67 bytes/sec
-total size is 11,602,128  speedup is 2.19
-Running run-trust4 for /QRISdata/Q7250/raw/01-0015-386008-T-R.sorted.rmdup.hs38.bam
-sending incremental file list
-01-0051-409375-T-R.sorted.rmdup.hs38.bam
-         32,768   0%    0.00kB/s    0:00:00       18,063,056 100%   22.16MB/s    0:00:00 (xfr#1, to-chk=0/1)
-
-sent 8,659,938 bytes  received 35 bytes  5,773,315.33 bytes/sec
-total size is 18,063,056  speedup is 2.09
-Running run-trust4 for /QRISdata/Q7250/raw/01-0051-409375-T-R.sorted.rmdup.hs38.bam
-sending incremental file list
-01-0074-405812-T-R.sorted.rmdup.hs38.bam
-         32,768   0%    0.00kB/s    0:00:00       15,299,376 100%   22.33MB/s    0:00:00 (xfr#1, to-chk=0/1)
-
-sent 7,166,864 bytes  received 35 bytes  14,333,798.00 bytes/sec
-total size is 15,299,376  speedup is 2.13
-Running run-trust4 for /QRISdata/Q7250/raw/01-0074-405812-T-R.sorted.rmdup.hs38.bam
-sending incremental file list
-01-0079-406620-T-R.sorted.rmdup.hs38.bam
-         32,768   0%    0.00kB/s    0:00:00       10,693,608 100%   22.80MB/s    0:00:00 (xfr#1, to-chk=0/1)
-
-sent 4,761,071 bytes  received 35 bytes  3,174,070.67 bytes/sec
-total size is 10,693,608  speedup is 2.25
-Running run-trust4 for /QRISdata/Q7250/raw/01-0079-406620-T-R.sorted.rmdup.hs38.bam
-sending incremental file list
-02-0063-412343-T-R.sorted.rmdup.hs38.bam
-         32,768   0%    0.00kB/s    0:00:00        9,738,808 100%   23.14MB/s    0:00:00 (xfr#1, to-chk=0/1)
-
-sent 4,309,364 bytes  received 35 bytes  8,618,798.00 bytes/sec
-total size is 9,738,808  speedup is 2.26
-Running run-trust4 for /QRISdata/Q7250/raw/02-0063-412343-T-R.sorted.rmdup.hs38.bam
-sending incremental file list
-02-0093-420598-T-R.sorted.rmdup.hs38.bam
-         32,768   0%    0.00kB/s    0:00:00        9,907,752 100%   22.58MB/s    0:00:00 (xfr#1, to-chk=0/1)
-
-sent 4,339,378 bytes  received 35 bytes  2,892,942.00 bytes/sec
-total size is 9,907,752  speedup is 2.28
-Running run-trust4 for /QRISdata/Q7250/raw/02-0093-420598-T-R.sorted.rmdup.hs38.bam
-sending incremental file list
-03-0017-408470-T-R.sorted.rmdup.hs38.bam
-         32,768   0%    0.00kB/s    0:00:00       13,705,040 100%   22.80MB/s    0:00:00 (xfr#1, to-chk=0/1)
-
-sent 6,369,780 bytes  received 35 bytes  12,739,630.00 bytes/sec
-total size is 13,705,040  speedup is 2.15
-Running run-trust4 for /QRISdata/Q7250/raw/03-0017-408470-T-R.sorted.rmdup.hs38.bam
-sending incremental file list
-04-0070-410882-T-R.sorted.rmdup.hs38.bam
-         32,768   0%    0.00kB/s    0:00:00       14,362,136 100%   22.04MB/s    0:00:00 (xfr#1, to-chk=0/1)
-
-sent 6,842,949 bytes  received 35 bytes  13,685,968.00 bytes/sec
-total size is 14,362,136  speedup is 2.10
-Running run-trust4 for /QRISdata/Q7250/raw/04-0070-410882-T-R.sorted.rmdup.hs38.bam
-sending incremental file list
-04-0097-420602-T-R.sorted.rmdup.hs38.bam
-         32,768   0%    0.00kB/s    0:00:00       10,813,440 100%   22.55MB/s    0:00:00 (xfr#1, to-chk=0/1)
-
-sent 4,812,902 bytes  received 35 bytes  3,208,624.67 bytes/sec
-total size is 10,813,440  speedup is 2.25
-Running run-trust4 for /QRISdata/Q7250/raw/04-0097-420602-T-R.sorted.rmdup.hs38.bam
-sending incremental file list
-06-0015-392912-T-R.sorted.rmdup.hs38.bam
-         32,768   0%    0.00kB/s    0:00:00       11,861,832 100%   22.61MB/s    0:00:00 (xfr#1, to-chk=0/1)
-
-sent 5,356,175 bytes  received 35 bytes  10,712,420.00 bytes/sec
-total size is 11,861,832  speedup is 2.21
-Running run-trust4 for /QRISdata/Q7250/raw/06-0015-392912-T-R.sorted.rmdup.hs38.bam
-sending incremental file list
-06-0057-405805-T-R.sorted.rmdup.hs38.bam
-         32,768   0%    0.00kB/s    0:00:00       13,275,488 100%   22.43MB/s    0:00:00 (xfr#1, to-chk=0/1)
-
