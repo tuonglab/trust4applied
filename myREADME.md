@@ -20,3 +20,5 @@ zerofastqfetch.sh : main script that will call the trust4 scripts for each of th
 all the other files were present in amos repository : https://github.com/tuonglab/trust4-processing
 
 if any questions : simon2mon@gmail.com
+
+basically within the downloading space (Q7250) with all the script the workflow was : raw, raw/concatenednew , resultsTrust4F , zero_extracted , zero_only_seq
