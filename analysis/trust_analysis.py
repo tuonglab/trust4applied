@@ -1,27 +1,20 @@
-
-# j'ai plusieurs fichiers tsv dans le dossier suivant qui contiennent des séquences
-# puis compter toutes les séquences, sortir le nombre de séquences final. 
-# mais aussi compter le nombre de séquence pour chaque longueur (12 acides aminés, 13, 14)
-# en sortir le nombre
-# et faire un histogramme en barre avec le nombre de seq pour chaque length
-
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Chemin vers le répertoire contenant les fichiers .tsv
+# Path to the directory containing .tsv files
 pathtolook = "/QRISdata/Q7250/zero_only_seq"
 
-# Initialisation des compteurs
+# Initialize counters
 total_sequences = 0
 length_counts = {}
 
-# Lecture de chaque fichier .tsv dans le répertoire
+# Read each .tsv file in the directory
 for filename in os.listdir(pathtolook):
     if filename.endswith(".tsv"):
         file_path = os.path.join(pathtolook, filename)
         
-        # Lecture du fichier ligne par ligne
+        # Read the file line by line
         with open(file_path, 'r') as file:
             for line in file:
                 sequence = line.strip()
@@ -32,32 +25,32 @@ for filename in os.listdir(pathtolook):
                 else:
                     length_counts[seq_length] = 1
 
-# Écriture des résultats dans un fichier
+# Write the results to a file
 output_file = "sequence_counts.txt"
 with open(output_file, 'w') as out_file:
-    out_file.write(f"Nombre total de séquences: {total_sequences}\n")
+    out_file.write(f"Total number of sequences: {total_sequences}\n")
     for length, count in length_counts.items():
-        out_file.write(f"Longueur {length}: {count} séquences\n")
+        out_file.write(f"Length {length}: {count} sequences\n")
 
-# Impression du nombre total de séquences (facultatif)
-print(f"Les résultats ont été écrits dans {output_file}")
+# Print the total number of sequences (optional)
+print(f"Results have been written to {output_file}")
 
-# Création de l'histogramme en barre
+# Create a bar plot
 lengths = list(length_counts.keys())
 counts = list(length_counts.values())
 
 plt.figure(figsize=(10, 6))
 sns.barplot(x=lengths, y=counts, palette="viridis")
 plt.xlabel('Length of sequences (amino acids)')
-plt.ylabel('sequences count')
-plt.title('sequence length distribution')
+plt.ylabel('Sequence count')
+plt.title('Sequence Length Distribution')
 
-# Sauvegarde de l'histogramme en barre
+# Save the bar plot
 output_image = "sequence_length_distribution.png"
 plt.savefig(output_image)
 
-# Affichage de l'histogramme
+# Display the bar plot
 plt.show()
 
-# Impression du chemin de l'image sauvegardée (facultatif)
-print(f"L'histogramme a été sauvegardé dans {output_image}")
+# Print the path of the saved image (optional)
+print(f"The histogram has been saved to {output_image}")

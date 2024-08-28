@@ -1,17 +1,16 @@
 #!/bin/bash
 
-# Se placer dans le dossier 'concatened
-
+# Change directory to concatenednew
 dir="/QRISdata/Q7250/raw/concatenednew"
 
-# Pour chaque fichier R1 dans le dossier
+# For each R file in the folder
 for file in ${dir}/*; do
-    # Extraire l'identifiant unique en supprimant les parties spécifiques de R1/R2 et les extensions
+    # Extract the unique identifier by removing specific parts of R1/R2 and the extensions
     folder_name=$(echo $file | sed -E 's/(_R[12].fastq.gz)+$//')
 
-    # Créer un dossier basé sur l'identifiant unique s'il n'existe pas déjà
+    # Create a directory based on the unique identifier if it doesn't already exist
     mkdir -p "${folder_name}"
 
-    # Déplacer le fichier dans le dossier de destination correspondant
+    # Move the file to the corresponding destination directory
     mv "$file" "${folder_name}/"
 done
